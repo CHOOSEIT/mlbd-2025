@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import pandas as pd
+
 def person_a():
     """Reads the data in data/school_performance.csv
     and returns a dataframe with the first 5,000 rows.
@@ -11,7 +13,7 @@ def person_a():
     # Code goes over here.
 
     
-    raise NotImplementedError()
+    return pd.read_csv("../../data/school_performance.csv").iloc[:5000]
 
 def person_b(df):
     """Keeps only the data from the female students. 
